@@ -277,15 +277,14 @@ section .background-text {
 .project-flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     width: 80%;
 }
 
 .project-flex div {
     position: relative;
-    width: 250px;
-    height: 250px;
     transition: 300ms ease;
+    margin: 0 10px;
 }
 
 .project-flex div:hover {
@@ -294,6 +293,7 @@ section .background-text {
 }
 
 .project-flex img {
+    width: 250px;
     height: 250px;
     filter: hue-rotate(210deg) brightness(1);
     transition: 300ms ease;
