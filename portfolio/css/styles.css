@@ -9,6 +9,10 @@
     --main-black: #0d081a;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Base Styles */
 
