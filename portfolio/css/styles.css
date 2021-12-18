@@ -183,9 +183,12 @@ section .background-text {
 .service-grid {
     display: grid;
     width: 80%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 2em;
     margin-top: 1em;
+}
+
+.introduction-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .introduction-grid div,
@@ -221,7 +224,13 @@ section .background-text {
 /* Service */
 
 .service-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 65rem) {
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .service-grid div {
@@ -268,8 +277,8 @@ section .background-text {
 .project-flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: space-around;
+    width: 80%;
 }
 
 .project-flex div {
