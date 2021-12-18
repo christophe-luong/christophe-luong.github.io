@@ -18,14 +18,19 @@
 }
 
 body {
-    font: 1.25em "Raleway", sans-serif;
+    font: 1.5em "Raleway", sans-serif;
     color: var(--main-black);
+}
+
+h1 {
+    margin: 1em 0;
 }
 
 h2 {
     position: absolute;
     color: var(--main-black);
     width: 15em;
+    font-size: 2rem;
     text-transform: uppercase;
     z-index: 1;
 }
@@ -37,7 +42,7 @@ hr {
 }
 
 .container {
-    width: clamp(300px, 50%, 700px);
+    width: clamp(300px, 70%, 800px);
     padding-bottom: 20px;
     z-index: 1;
 }
@@ -67,6 +72,7 @@ a {
     height: 100vh;
     color: var(--main-white);
     text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 .welcome-section::before {
@@ -83,10 +89,6 @@ a {
     background-blend-mode: color-dodge;
     background-color: var(--main-purple);
     z-index: -1;
-}
-
-.welcome-section div h1 {
-    margin: 1em 0;
 }
 
 .highlight {
@@ -196,7 +198,7 @@ section .background-text {
     overflow: hidden;
 }
 
-.introduction-grid div img {
+.introduction-grid img {
     height: 250px;
     height: 250px;
     padding: 3em;
@@ -307,12 +309,14 @@ section .background-text {
 }
 
 .incoming {
-    text-transform: uppercase;
+    position: absolute;
+    text-transform: uppercase initial;
     font-weight: bold;
-    top: 35%;
+    top: 2em;
 }
 
 .grayed {
+    position: relative;
     filter: saturate(20%);
 }
 
